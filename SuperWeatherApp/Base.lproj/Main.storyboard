@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,14 +19,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="city" translatesAutoresizingMaskIntoConstraints="NO" id="R4p-hk-tJB">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clear" translatesAutoresizingMaskIntoConstraints="NO" id="dfy-rb-Llw">
-                                <rect key="frame" x="200" y="39" width="140" height="129"/>
+                                <rect key="frame" x="145" y="39" width="140" height="129"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="7tR-7E-NCf"/>
                                     <constraint firstAttribute="height" constant="129" id="VrS-nU-qQp"/>
@@ -51,22 +51,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="01p-1G-Aa8">
-                                <rect key="frame" x="8" y="478" width="359" height="169"/>
+                                <rect key="frame" x="8" y="379" width="304" height="169"/>
                                 <subviews>
                                     <view alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69y-LB-g5I">
-                                        <rect key="frame" x="0.0" y="0.0" width="116.5" height="169"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="98" height="169"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wind" translatesAutoresizingMaskIntoConstraints="NO" id="2n3-IM-Oz1">
-                                                <rect key="frame" x="8" y="8" width="100.5" height="60"/>
+                                                <rect key="frame" x="8" y="8" width="82" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="N0R-8J-0yd"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="VQ4-Qn-JwY"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29E-3e-1xY">
-                                                <rect key="frame" x="33" y="76" width="50" height="27"/>
+                                                <rect key="frame" x="9" y="76" width="80" height="27"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="Fcf-wH-gQL"/>
+                                                    <constraint firstAttribute="width" constant="80" id="Fcf-wH-gQL"/>
                                                     <constraint firstAttribute="height" constant="27" id="TJY-gp-Amt"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
@@ -74,7 +74,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGy-a8-Mhy">
-                                                <rect key="frame" x="12" y="134" width="91" height="27"/>
+                                                <rect key="frame" x="3" y="134" width="91" height="27"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="27" id="2px-pL-XH7"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="91" id="JQe-yQ-YnZ"/>
@@ -98,19 +98,19 @@
                                         </constraints>
                                     </view>
                                     <view alpha="0.94999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJz-41-W5J">
-                                        <rect key="frame" x="121.5" y="0.0" width="116" height="169"/>
+                                        <rect key="frame" x="103" y="0.0" width="98" height="169"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="humidity" translatesAutoresizingMaskIntoConstraints="NO" id="udm-lc-mPC">
-                                                <rect key="frame" x="8" y="8" width="100" height="60"/>
+                                                <rect key="frame" x="8" y="8" width="82" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="7HE-l1-jsq"/>
                                                     <constraint firstAttribute="height" constant="60" id="QDW-m2-3aO"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5c-kp-wQl">
-                                                <rect key="frame" x="33" y="76" width="50" height="27"/>
+                                                <rect key="frame" x="9" y="76" width="80" height="27"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="3VW-KE-to3"/>
+                                                    <constraint firstAttribute="width" constant="80" id="3VW-KE-to3"/>
                                                     <constraint firstAttribute="height" constant="27" id="YUI-lS-17d"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
@@ -118,7 +118,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdQ-Zt-Hsq">
-                                                <rect key="frame" x="12" y="134" width="91" height="27"/>
+                                                <rect key="frame" x="3" y="134" width="91" height="27"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="27" id="9D4-tt-2iQ"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="91" id="Mfi-KP-y9t"/>
@@ -142,27 +142,27 @@
                                         </constraints>
                                     </view>
                                     <view alpha="0.94999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Amk-v7-d4x">
-                                        <rect key="frame" x="242.5" y="0.0" width="116.5" height="169"/>
+                                        <rect key="frame" x="206" y="0.0" width="98" height="169"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pressure" translatesAutoresizingMaskIntoConstraints="NO" id="NZI-Hm-3sQ">
-                                                <rect key="frame" x="8" y="8" width="100.5" height="60"/>
+                                                <rect key="frame" x="8" y="8" width="82" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="axC-xR-GtB"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="s6s-Cn-y0K"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PL-0P-LFK">
-                                                <rect key="frame" x="33.5" y="76" width="50" height="27"/>
+                                                <rect key="frame" x="9.5" y="76" width="80" height="27"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="27" id="YLP-XK-QE8"/>
-                                                    <constraint firstAttribute="width" constant="50" id="dEk-yq-u6i"/>
+                                                    <constraint firstAttribute="width" constant="80" id="dEk-yq-u6i"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Air pressure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXF-IF-bpw">
-                                                <rect key="frame" x="12" y="134" width="91" height="27"/>
+                                                <rect key="frame" x="3" y="134" width="91" height="27"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="91" id="IaD-4j-sl6"/>
                                                     <constraint firstAttribute="height" constant="27" id="JWe-Lo-ggc"/>

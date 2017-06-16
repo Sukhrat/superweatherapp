@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var humidityLbl: UILabel!
     @IBOutlet weak var pressureLbl: UILabel!
     
+    var currentWeather: CurrentWeather!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,11 @@ class ViewController: UIViewController {
         addShadowTo(currentTempLbl)
         addShadowTo(currentWeatherTypeLbl)
         addShadowTo(cityLbl)
+        
+        currentWeather = CurrentWeather()
+        currentWeather.downloadWeatherDetails {
+            self.updateMainUI()
+        }
     }
     
     func addShadowTo(_ obj: AnyObject) {
@@ -34,6 +40,16 @@ class ViewController: UIViewController {
 
         obj.layer.shadowOffset = CGSize.zero
         obj.layer.shadowRadius = 10.0
+    }
+    
+    func updateMainUI() {
+        self.weatherImg.image = UIImage(named: currentWeather.weatherType)
+        self.currentTempLbl.text = "\(Int(currentWeather.currentTemp - 273.15))°C"
+        self.currentWeatherTypeLbl.text = currentWeather.weatherType
+        self.cityLbl.text = currentWeather.cityName
+        self.windSpeedLbl.text = "\(currentWeather.windSpeed)km/h"
+        self.humidityLbl.text = "\(currentWeather.humidity)%"
+        self.pressureLbl.text = "\(currentWeather.airPressure)hpa"
     }
 
    

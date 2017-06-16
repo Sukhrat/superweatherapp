@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7E27D1B15D987BEAEEE02CA /* Pods_SuperWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5169312F4C3EB4BF29004AEF /* Pods_SuperWeatherApp.framework */; };
 		EE89A8601EF3DBE4001B9923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE89A85F1EF3DBE4001B9923 /* AppDelegate.swift */; };
 		EE89A8621EF3DBE4001B9923 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE89A8611EF3DBE4001B9923 /* ViewController.swift */; };
 		EE89A8651EF3DBE4001B9923 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE89A8631EF3DBE4001B9923 /* Main.storyboard */; };
 		EE89A8671EF3DBE4001B9923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE89A8661EF3DBE4001B9923 /* Assets.xcassets */; };
 		EE89A86A1EF3DBE4001B9923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE89A8681EF3DBE4001B9923 /* LaunchScreen.storyboard */; };
+		EE89A8721EF3F91F001B9923 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE89A8711EF3F91F001B9923 /* Constants.swift */; };
+		EE89A8771EF3FA7A001B9923 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE89A8761EF3FA7A001B9923 /* CurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5169312F4C3EB4BF29004AEF /* Pods_SuperWeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperWeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1A3F1D54C41280E5D45B0C /* Pods-SuperWeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperWeatherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuperWeatherApp/Pods-SuperWeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A8A638B960F378043F8D9470 /* Pods-SuperWeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperWeatherApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuperWeatherApp/Pods-SuperWeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		EE89A85C1EF3DBE4001B9923 /* SuperWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE89A85F1EF3DBE4001B9923 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE89A8611EF3DBE4001B9923 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		EE89A8661EF3DBE4001B9923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE89A8691EF3DBE4001B9923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE89A86B1EF3DBE4001B9923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE89A8711EF3F91F001B9923 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EE89A8761EF3FA7A001B9923 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7E27D1B15D987BEAEEE02CA /* Pods_SuperWeatherApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D46063063399AFA7744EBE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5169312F4C3EB4BF29004AEF /* Pods_SuperWeatherApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95A1DADB20AB8A3559A48F9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D1A3F1D54C41280E5D45B0C /* Pods-SuperWeatherApp.debug.xcconfig */,
+				A8A638B960F378043F8D9470 /* Pods-SuperWeatherApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EE89A8531EF3DBE4001B9923 = {
 			isa = PBXGroup;
 			children = (
 				EE89A85E1EF3DBE4001B9923 /* SuperWeatherApp */,
 				EE89A85D1EF3DBE4001B9923 /* Products */,
+				95A1DADB20AB8A3559A48F9E /* Pods */,
+				8D46063063399AFA7744EBE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +82,40 @@
 		EE89A85E1EF3DBE4001B9923 /* SuperWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				EE89A8751EF3FA60001B9923 /* Model */,
+				EE89A8741EF3FA5A001B9923 /* View */,
+				EE89A8731EF3FA54001B9923 /* Controller */,
 				EE89A85F1EF3DBE4001B9923 /* AppDelegate.swift */,
-				EE89A8611EF3DBE4001B9923 /* ViewController.swift */,
 				EE89A8631EF3DBE4001B9923 /* Main.storyboard */,
 				EE89A8661EF3DBE4001B9923 /* Assets.xcassets */,
 				EE89A8681EF3DBE4001B9923 /* LaunchScreen.storyboard */,
 				EE89A86B1EF3DBE4001B9923 /* Info.plist */,
 			);
 			path = SuperWeatherApp;
+			sourceTree = "<group>";
+		};
+		EE89A8731EF3FA54001B9923 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE89A8611EF3DBE4001B9923 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EE89A8741EF3FA5A001B9923 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EE89A8751EF3FA60001B9923 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE89A8711EF3F91F001B9923 /* Constants.swift */,
+				EE89A8761EF3FA7A001B9923 /* CurrentWeather.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE89A86E1EF3DBE4001B9923 /* Build configuration list for PBXNativeTarget "SuperWeatherApp" */;
 			buildPhases = (
+				D7FCAADE353D98AE8F1BADBD /* [CP] Check Pods Manifest.lock */,
 				EE89A8581EF3DBE4001B9923 /* Sources */,
 				EE89A8591EF3DBE4001B9923 /* Frameworks */,
 				EE89A85A1EF3DBE4001B9923 /* Resources */,
+				5E1B99D06976F75BF65E1875 /* [CP] Embed Pods Frameworks */,
+				2CCE34C5A172D8985668130E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +188,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2CCE34C5A172D8985668130E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SuperWeatherApp/Pods-SuperWeatherApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E1B99D06976F75BF65E1875 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SuperWeatherApp/Pods-SuperWeatherApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7FCAADE353D98AE8F1BADBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EE89A8581EF3DBE4001B9923 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +243,8 @@
 			files = (
 				EE89A8621EF3DBE4001B9923 /* ViewController.swift in Sources */,
 				EE89A8601EF3DBE4001B9923 /* AppDelegate.swift in Sources */,
+				EE89A8771EF3FA7A001B9923 /* CurrentWeather.swift in Sources */,
+				EE89A8721EF3F91F001B9923 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +365,7 @@
 		};
 		EE89A86F1EF3DBE4001B9923 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D1A3F1D54C41280E5D45B0C /* Pods-SuperWeatherApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SuperWeatherApp/Info.plist;
@@ -270,6 +378,7 @@
 		};
 		EE89A8701EF3DBE4001B9923 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8A638B960F378043F8D9470 /* Pods-SuperWeatherApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SuperWeatherApp/Info.plist;
@@ -299,6 +408,7 @@
 				EE89A8701EF3DBE4001B9923 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
