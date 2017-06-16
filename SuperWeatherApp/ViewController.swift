@@ -10,16 +10,32 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var weatherImg: UIImageView!
+    @IBOutlet weak var currentTempLbl: UILabel!
+    @IBOutlet weak var currentWeatherTypeLbl: UILabel!
+    @IBOutlet weak var cityLbl: UILabel!
+    @IBOutlet weak var windSpeedLbl: UILabel!
+    @IBOutlet weak var humidityLbl: UILabel!
+    @IBOutlet weak var pressureLbl: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+       // addShadowTo(weatherImg)
+        addShadowTo(currentTempLbl)
+        addShadowTo(currentWeatherTypeLbl)
+        addShadowTo(cityLbl)
+    }
+    
+    func addShadowTo(_ obj: AnyObject) {
+        obj.layer.shadowColor = UIColor.black.cgColor
+        obj.layer.shadowOpacity = 1
+
+        obj.layer.shadowOffset = CGSize.zero
+        obj.layer.shadowRadius = 10.0
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+   
 }
 

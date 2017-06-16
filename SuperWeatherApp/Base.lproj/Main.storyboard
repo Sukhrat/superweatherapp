@@ -227,6 +227,15 @@
                             <constraint firstItem="dfy-rb-Llw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="zNm-Dg-e6O"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLbl" destination="NWl-cc-Jyl" id="2q5-aM-5m0"/>
+                        <outlet property="currentTempLbl" destination="yaD-hb-18d" id="hJb-CT-gLN"/>
+                        <outlet property="currentWeatherTypeLbl" destination="7JZ-F1-h36" id="enU-xU-Scm"/>
+                        <outlet property="humidityLbl" destination="o5c-kp-wQl" id="TQv-m7-LsT"/>
+                        <outlet property="pressureLbl" destination="2PL-0P-LFK" id="RbJ-Mx-FAa"/>
+                        <outlet property="weatherImg" destination="dfy-rb-Llw" id="wPO-ig-vWK"/>
+                        <outlet property="windSpeedLbl" destination="29E-3e-1xY" id="I7I-6S-QZr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
