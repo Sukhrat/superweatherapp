@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SuperWeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="city" translatesAutoresizingMaskIntoConstraints="NO" id="R4p-hk-tJB">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clear" translatesAutoresizingMaskIntoConstraints="NO" id="dfy-rb-Llw">
+                                <rect key="frame" x="200" y="39" width="140" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="7tR-7E-NCf"/>
+                                    <constraint firstAttribute="height" constant="129" id="VrS-nU-qQp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaD-hb-18d">
+                                <rect key="frame" x="32" y="57" width="111.5" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="KIi-ye-tXv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="57"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7JZ-F1-h36">
+                                <rect key="frame" x="62.5" y="130" width="81" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="x95-yM-XPh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="01p-1G-Aa8">
+                                <rect key="frame" x="8" y="478" width="359" height="169"/>
+                                <subviews>
+                                    <view alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69y-LB-g5I">
+                                        <rect key="frame" x="0.0" y="0.0" width="116.5" height="169"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wind" translatesAutoresizingMaskIntoConstraints="NO" id="2n3-IM-Oz1">
+                                                <rect key="frame" x="8" y="8" width="100.5" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="N0R-8J-0yd"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="VQ4-Qn-JwY"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29E-3e-1xY">
+                                                <rect key="frame" x="33" y="76" width="50" height="27"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="Fcf-wH-gQL"/>
+                                                    <constraint firstAttribute="height" constant="27" id="TJY-gp-Amt"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGy-a8-Mhy">
+                                                <rect key="frame" x="12" y="134" width="91" height="27"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="2px-pL-XH7"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="91" id="JQe-yQ-YnZ"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="PqH-rv-Yk0"/>
+                                                    <constraint firstAttribute="width" constant="91" id="bFe-Wt-gHs"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.73929589240000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="2n3-IM-Oz1" firstAttribute="top" secondItem="69y-LB-g5I" secondAttribute="top" constant="8" id="JEm-7c-xP1"/>
+                                            <constraint firstItem="UGy-a8-Mhy" firstAttribute="centerX" secondItem="69y-LB-g5I" secondAttribute="centerX" id="TqD-Jb-Btt"/>
+                                            <constraint firstAttribute="trailing" secondItem="2n3-IM-Oz1" secondAttribute="trailing" constant="8" id="hAC-mU-NNL"/>
+                                            <constraint firstItem="29E-3e-1xY" firstAttribute="centerX" secondItem="69y-LB-g5I" secondAttribute="centerX" id="kIv-an-Fbo"/>
+                                            <constraint firstItem="2n3-IM-Oz1" firstAttribute="leading" secondItem="69y-LB-g5I" secondAttribute="leading" constant="8" id="lTF-Cr-Cjj"/>
+                                            <constraint firstItem="29E-3e-1xY" firstAttribute="top" secondItem="2n3-IM-Oz1" secondAttribute="bottom" constant="8" id="mbJ-hw-hry"/>
+                                            <constraint firstAttribute="bottom" secondItem="UGy-a8-Mhy" secondAttribute="bottom" constant="8" id="n4e-tG-nqz"/>
+                                        </constraints>
+                                    </view>
+                                    <view alpha="0.94999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJz-41-W5J">
+                                        <rect key="frame" x="121.5" y="0.0" width="116" height="169"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="humidity" translatesAutoresizingMaskIntoConstraints="NO" id="udm-lc-mPC">
+                                                <rect key="frame" x="8" y="8" width="100" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="7HE-l1-jsq"/>
+                                                    <constraint firstAttribute="height" constant="60" id="QDW-m2-3aO"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5c-kp-wQl">
+                                                <rect key="frame" x="33" y="76" width="50" height="27"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="3VW-KE-to3"/>
+                                                    <constraint firstAttribute="height" constant="27" id="YUI-lS-17d"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdQ-Zt-Hsq">
+                                                <rect key="frame" x="12" y="134" width="91" height="27"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="9D4-tt-2iQ"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="91" id="Mfi-KP-y9t"/>
+                                                    <constraint firstAttribute="width" constant="91" id="OfA-dg-IFO"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="jtE-kC-Ipm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.73929589240000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="o5c-kp-wQl" firstAttribute="centerX" secondItem="gJz-41-W5J" secondAttribute="centerX" id="4X2-7G-sg3"/>
+                                            <constraint firstAttribute="bottom" secondItem="wdQ-Zt-Hsq" secondAttribute="bottom" constant="8" id="7dy-gq-Noz"/>
+                                            <constraint firstAttribute="trailing" secondItem="udm-lc-mPC" secondAttribute="trailing" constant="8" id="GGa-FT-YoU"/>
+                                            <constraint firstItem="udm-lc-mPC" firstAttribute="top" secondItem="gJz-41-W5J" secondAttribute="top" constant="8" id="U9M-ga-9bT"/>
+                                            <constraint firstItem="wdQ-Zt-Hsq" firstAttribute="centerX" secondItem="gJz-41-W5J" secondAttribute="centerX" id="p8d-7f-Y35"/>
+                                            <constraint firstItem="o5c-kp-wQl" firstAttribute="top" secondItem="udm-lc-mPC" secondAttribute="bottom" constant="8" id="r9B-RZ-Syz"/>
+                                            <constraint firstItem="udm-lc-mPC" firstAttribute="leading" secondItem="gJz-41-W5J" secondAttribute="leading" constant="8" id="vIT-GV-Hfc"/>
+                                        </constraints>
+                                    </view>
+                                    <view alpha="0.94999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Amk-v7-d4x">
+                                        <rect key="frame" x="242.5" y="0.0" width="116.5" height="169"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pressure" translatesAutoresizingMaskIntoConstraints="NO" id="NZI-Hm-3sQ">
+                                                <rect key="frame" x="8" y="8" width="100.5" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="axC-xR-GtB"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="s6s-Cn-y0K"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PL-0P-LFK">
+                                                <rect key="frame" x="33.5" y="76" width="50" height="27"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="YLP-XK-QE8"/>
+                                                    <constraint firstAttribute="width" constant="50" id="dEk-yq-u6i"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Air pressure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXF-IF-bpw">
+                                                <rect key="frame" x="12" y="134" width="91" height="27"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="91" id="IaD-4j-sl6"/>
+                                                    <constraint firstAttribute="height" constant="27" id="JWe-Lo-ggc"/>
+                                                    <constraint firstAttribute="width" constant="91" id="dVf-Lq-4nv"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="flJ-zD-YL5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.73929589240000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="NZI-Hm-3sQ" secondAttribute="trailing" constant="8" id="45w-L9-bfJ"/>
+                                            <constraint firstItem="NZI-Hm-3sQ" firstAttribute="leading" secondItem="Amk-v7-d4x" secondAttribute="leading" constant="8" id="Vvr-nA-pe5"/>
+                                            <constraint firstItem="nXF-IF-bpw" firstAttribute="centerX" secondItem="Amk-v7-d4x" secondAttribute="centerX" id="WEA-tP-drx"/>
+                                            <constraint firstItem="NZI-Hm-3sQ" firstAttribute="top" secondItem="Amk-v7-d4x" secondAttribute="top" constant="8" id="cQ6-kw-KeW"/>
+                                            <constraint firstItem="2PL-0P-LFK" firstAttribute="centerX" secondItem="Amk-v7-d4x" secondAttribute="centerX" id="cwS-sb-G6Z"/>
+                                            <constraint firstItem="2PL-0P-LFK" firstAttribute="top" secondItem="NZI-Hm-3sQ" secondAttribute="bottom" constant="8" id="khH-rd-7A8"/>
+                                            <constraint firstAttribute="bottom" secondItem="nXF-IF-bpw" secondAttribute="bottom" constant="8" id="rvY-hJ-cFO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="169" id="0Le-AB-9HY"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aja-e1-Cvz">
+                                <rect key="frame" x="101" y="194" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Almaty" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWl-cc-Jyl">
+                                <rect key="frame" x="84" y="183" width="59.5" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="zNy-3x-u1g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.73929589240000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="R4p-hk-tJB" secondAttribute="trailing" id="2LF-CP-KW8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="R4p-hk-tJB" secondAttribute="bottom" id="5Rc-wX-geT"/>
+                            <constraint firstItem="7JZ-F1-h36" firstAttribute="trailing" secondItem="yaD-hb-18d" secondAttribute="trailing" id="8j6-Or-fJ9"/>
+                            <constraint firstItem="NWl-cc-Jyl" firstAttribute="top" secondItem="7JZ-F1-h36" secondAttribute="bottom" constant="8" id="Bry-qc-O2P"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="01p-1G-Aa8" secondAttribute="bottom" constant="20" id="DvB-9p-3LZ"/>
+                            <constraint firstItem="NWl-cc-Jyl" firstAttribute="trailing" secondItem="7JZ-F1-h36" secondAttribute="trailing" id="KJ6-sr-7wD"/>
+                            <constraint firstItem="01p-1G-Aa8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="OmP-ti-diM"/>
+                            <constraint firstItem="R4p-hk-tJB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Tqu-BL-T2A"/>
+                            <constraint firstItem="7JZ-F1-h36" firstAttribute="top" secondItem="yaD-hb-18d" secondAttribute="bottom" constant="8" id="VfN-Tr-DLX"/>
+                            <constraint firstItem="R4p-hk-tJB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YKT-Id-jbr"/>
+                            <constraint firstItem="yaD-hb-18d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="bdX-CD-dHc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dfy-rb-Llw" secondAttribute="trailing" constant="19" id="mb0-Z4-ZMC"/>
+                            <constraint firstItem="01p-1G-Aa8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mhY-nG-h6E"/>
+                            <constraint firstAttribute="trailing" secondItem="01p-1G-Aa8" secondAttribute="trailing" constant="8" id="qsC-GQ-wNT"/>
+                            <constraint firstItem="yaD-hb-18d" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="vBr-OM-ZOm"/>
+                            <constraint firstItem="dfy-rb-Llw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="zNm-Dg-e6O"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Clear" width="107" height="107"/>
+        <image name="city" width="620" height="916"/>
+        <image name="humidity" width="350" height="350"/>
+        <image name="pressure" width="500" height="393"/>
+        <image name="wind" width="500" height="393"/>
+    </resources>
+</document>
