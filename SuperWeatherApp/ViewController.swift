@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Alamofire
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var weatherImg: UIImageView!
     @IBOutlet weak var currentTempLbl: UILabel!
@@ -17,8 +18,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var windSpeedLbl: UILabel!
     @IBOutlet weak var humidityLbl: UILabel!
     @IBOutlet weak var pressureLbl: UILabel!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     var currentWeather: CurrentWeather!
+    var forecasts = [Forecast]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,10 +31,47 @@ class ViewController: UIViewController {
         addShadowTo(currentWeatherTypeLbl)
         addShadowTo(cityLbl)
         
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
+        
+        
         currentWeather = CurrentWeather()
         currentWeather.downloadWeatherDetails {
-            self.updateMainUI()
+            self.downloadForecastData {
+                self.updateMainUI()
+            }
+            
         }
+    }
+    
+    func downloadForecastData(complete: @escaping DownloadComplete) {
+
+        Alamofire.request(FORECAST_URL).responseJSON { (response) in
+            let result = response.result
+            
+            if let dict = result.value as? Dictionary<String, AnyObject> {
+                
+                if let list = dict["list"] as? [Dictionary<String, AnyObject>] {
+                    
+                    for obj in list {
+                        
+                        let forecast = Forecast(weatherDict: obj)
+                        self.forecasts.append(forecast)
+                        
+                    }
+                    
+                }
+                
+            }
+            self.forecasts.remove(at: 0)
+            self.collectionView.reloadData()
+            complete()
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
     
     func addShadowTo(_ obj: AnyObject) {
@@ -52,6 +92,30 @@ class ViewController: UIViewController {
         self.pressureLbl.text = "\(currentWeather.airPressure)hpa"
     }
 
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ForecastCell", for: indexPath) as? ForecastCell {
+            
+            cell.configureCell(forecast: forecasts[indexPath.row])
+            
+            return cell
+        }
+        
+        return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return forecasts.count
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
    
 }
 
