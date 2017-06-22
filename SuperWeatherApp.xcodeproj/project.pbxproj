@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B7E27D1B15D987BEAEEE02CA /* Pods_SuperWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5169312F4C3EB4BF29004AEF /* Pods_SuperWeatherApp.framework */; };
+		EE65D74F1EFBCFF300144305 /* MaterialShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65D74E1EFBCFF300144305 /* MaterialShadow.swift */; };
 		EE89A8601EF3DBE4001B9923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE89A85F1EF3DBE4001B9923 /* AppDelegate.swift */; };
 		EE89A8621EF3DBE4001B9923 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE89A8611EF3DBE4001B9923 /* ViewController.swift */; };
 		EE89A8651EF3DBE4001B9923 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE89A8631EF3DBE4001B9923 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		5169312F4C3EB4BF29004AEF /* Pods_SuperWeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperWeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D1A3F1D54C41280E5D45B0C /* Pods-SuperWeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperWeatherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuperWeatherApp/Pods-SuperWeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A8A638B960F378043F8D9470 /* Pods-SuperWeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperWeatherApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuperWeatherApp/Pods-SuperWeatherApp.release.xcconfig"; sourceTree = "<group>"; };
+		EE65D74E1EFBCFF300144305 /* MaterialShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialShadow.swift; sourceTree = "<group>"; };
 		EE89A85C1EF3DBE4001B9923 /* SuperWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE89A85F1EF3DBE4001B9923 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE89A8611EF3DBE4001B9923 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		EE89A8741EF3FA5A001B9923 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EE65D74E1EFBCFF300144305 /* MaterialShadow.swift */,
 				EEF0794A1EFA8D4D0012CC08 /* ForecastCell.swift */,
 			);
 			name = View;
@@ -248,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEF0794B1EFA8D4D0012CC08 /* ForecastCell.swift in Sources */,
+				EE65D74F1EFBCFF300144305 /* MaterialShadow.swift in Sources */,
 				EE89A8621EF3DBE4001B9923 /* ViewController.swift in Sources */,
 				EE89A8601EF3DBE4001B9923 /* AppDelegate.swift in Sources */,
 				EE89A8771EF3FA7A001B9923 /* CurrentWeather.swift in Sources */,

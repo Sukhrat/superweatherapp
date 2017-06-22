@@ -96,6 +96,9 @@
                                             <constraint firstItem="29E-3e-1xY" firstAttribute="top" secondItem="2n3-IM-Oz1" secondAttribute="bottom" constant="8" id="mbJ-hw-hry"/>
                                             <constraint firstAttribute="bottom" secondItem="UGy-a8-Mhy" secondAttribute="bottom" constant="8" id="n4e-tG-nqz"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadowCustom" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view alpha="0.94999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJz-41-W5J">
                                         <rect key="frame" x="121.5" y="0.0" width="116" height="169"/>
@@ -140,6 +143,9 @@
                                             <constraint firstItem="o5c-kp-wQl" firstAttribute="top" secondItem="udm-lc-mPC" secondAttribute="bottom" constant="8" id="r9B-RZ-Syz"/>
                                             <constraint firstItem="udm-lc-mPC" firstAttribute="leading" secondItem="gJz-41-W5J" secondAttribute="leading" constant="8" id="vIT-GV-Hfc"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadowCustom" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view alpha="0.94999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Amk-v7-d4x">
                                         <rect key="frame" x="242.5" y="0.0" width="116.5" height="169"/>
@@ -184,6 +190,9 @@
                                             <constraint firstItem="2PL-0P-LFK" firstAttribute="top" secondItem="NZI-Hm-3sQ" secondAttribute="bottom" constant="8" id="khH-rd-7A8"/>
                                             <constraint firstAttribute="bottom" secondItem="nXF-IF-bpw" secondAttribute="bottom" constant="8" id="rvY-hJ-cFO"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadowCustom" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <constraints>
