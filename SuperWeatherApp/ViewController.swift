@@ -113,6 +113,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return forecasts.count
     }
     
+    
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
